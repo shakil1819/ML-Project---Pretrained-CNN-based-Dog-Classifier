@@ -1,0 +1,113 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = resnet 
+ dogfile = dognames.txt
+
+10 filenames from folder pet_images
+Filename =  Dog_02.jpg     label =  dog
+
+ 1 file:                Dog_02.jpg
+
+Empty dictionary has 0 items
+Filename =  Tea_cup_01.jpg     label =  tea cup
+
+ 2 file:            Tea_cup_01.jpg
+
+Empty dictionary has 1 items
+Filename =  rabbit_01.jpg     label =  rabbit
+
+ 3 file:             rabbit_01.jpg
+
+Empty dictionary has 2 items
+Filename =  Dog_01.jpg     label =  dog
+
+ 4 file:                Dog_01.jpg
+
+Empty dictionary has 3 items
+
+Printing all key-value pairs in dictionary results_dic:
+
+filename =  Dog_02.jpg     pet label =  dog
+
+filename =  Tea_cup_01.jpg     pet label =  tea cup
+
+filename =  rabbit_01.jpg     pet label =  rabbit
+
+filename =  Dog_01.jpg     pet label =  dog
+
+Empty dictionary has 4 items
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     Dog_02.jpg  label:                        dog
+ 2 key:                 Tea_cup_01.jpg  label:                    tea cup
+ 3 key:                  rabbit_01.jpg  label:                     rabbit
+ 4 key:                     Dog_01.jpg  label:                        dog
+
+     MATCH:
+
+                 rabbit_01.jpg: 
+Real:                     rabbit   Classifier: wood rabbit, cottontail, cottontail rabbit, rabbit
+
+ NOT A MATCH:
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                       shih-tzu
+
+                Tea_cup_01.jpg: 
+Real:                    tea cup   Classifier:                      soup bowl
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                       shih-tzu
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+     MATCH:
+
+                 rabbit_01.jpg: 
+Real:                     rabbit   Classifier: wood rabbit, cottontail, cottontail rabbit, rabbit  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                       shih-tzu  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                Tea_cup_01.jpg: 
+Real:                    tea cup   Classifier:                      soup bowl  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                       shih-tzu  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+Model used: resnet
+
+Number of Images: 4 
+Number of Dog Images: 2 
+Number of "Not-a" Dog Images: 2
+pct_match: 25.0
+pct_correct_dogs: 100.0
+pct_correct_breed: 0.0
+pct_correct_notdogs: 100.0
+
+MISCLASSIFIED BREEDS: 
+ Pet Image Label?: dog 
+ Classifier Label?: shih-tzu
+
+MISCLASSIFIED BREEDS: 
+ Pet Image Label?: dog 
+ Classifier Label?: shih-tzu
+
+** Total Elapsed Runtime: 0:0:3
